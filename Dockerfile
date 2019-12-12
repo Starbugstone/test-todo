@@ -91,6 +91,7 @@ RUN set -eux; \
 COPY .env ./
 RUN composer dump-env prod; \
 	rm .env
+COPY .env.test ./
 
 # copy only specifically what we need
 COPY bin bin/
