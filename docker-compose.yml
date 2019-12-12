@@ -19,6 +19,7 @@ services:
             - 8080:8080
 
     php:
+        image: starbugstone/todoandco-php
         build:
             context: ./
             target: app_php
@@ -31,6 +32,7 @@ services:
             - db
 
     nginx:
+        image: starbugstone/todoandco-nginx
         build:
             context: ./
             target: app_nginx
