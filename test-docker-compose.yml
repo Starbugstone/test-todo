@@ -19,9 +19,9 @@ services:
             target: app_php
         ports:
             - 9000:9000
-        volumes:
-            - ./:/srv/app:rw,cached
-            - ./docker/php/conf.d/app.dev.ini:/usr/local/etc/php/conf.d/app.ini
+#        volumes:
+#            - ./:/srv/app:rw,cached
+#            - ./docker/php/conf.d/app.dev.ini:/usr/local/etc/php/conf.d/app.ini
         depends_on:
             - db
 
@@ -34,5 +34,5 @@ services:
             - 80:80
         depends_on:
             - php
-        volumes:
-            - ./public:/srv/app/public:ro
+#        volumes:
+#            - ./public:/srv/app/public:ro
