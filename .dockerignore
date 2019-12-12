@@ -22,7 +22,7 @@
 bin/*
 !bin/console
 !bin/phpunit
-!bin/.phpunit/*
+!bin/.phpunit/phpunit.xds
 build/
 docker/db/data/
 helm/
